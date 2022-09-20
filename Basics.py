@@ -132,5 +132,7 @@ print(s1) #False
 
 s1 = s1 ^ s2 #XOR operator, true if ONLY one of these is true. "Exclusive OR"
 s1 ^= s2 #Rewritten version
-print(s1) #False
-
+print(s1) #False due to s1 being set to False during the AND operator expression above
+s1 = True #Set s1 back to True
+s1 ^= s2 #Re-run the XOR comparison
+print(s1) #True
